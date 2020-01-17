@@ -1,23 +1,22 @@
-/*querySelector's de showSignUp*/
- document.querySelector('.signUp').addEventListener('click', () => {
-   let email = document.getElementById('email').value;
-   let password = document.getElementById('password').value;
-   createUser(email, password);
+document.querySelector('.signUp').addEventListener('click', () => {
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+   createUserFirebase(email, password);
  });
- document.querySelector('.facebook').addEventListener('click', () => {
-   logInWithFacebook();
+document.querySelector('.facebook').addEventListener('click', () => {
+  logInWithProvider(1);
 });
 document.querySelector('.twitter').addEventListener('click', () => {
-  logInWithTwitter();
+  logInWithProvider(2);
 });
 document.querySelector('.google').addEventListener('click', () => {
-  logInWithGoogle();
+  logInWithProvider(3);
 });
 document.querySelector('.github').addEventListener('click', () => {
-  logInWithGithub();
+  logInWithProvider(4);
 });
 document.querySelector('.back').addEventListener('click', () => {
-  //funcion que te regrese a home.
+  // funcion que te regrese a home.
 });
 /* Template dinamico de signUp
 export const showSignUp = () => {
@@ -42,5 +41,4 @@ export const showSignUp = () => {
     `
     container.innerHTML = template;
 
-  }
-*/
+  } */
