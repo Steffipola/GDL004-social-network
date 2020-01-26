@@ -1,0 +1,66 @@
+/* ************ start welcomeView's template ********** */
+.welcomeView {
+    background-image: url('../assets/backgroundMin.jpg');
+    width:100%;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% repeat(3,1fr ) 5% ;
+    grid-template-areas:
+    'nav nav nav'
+    'header . .'
+    'section . aside'
+    '. . buttons'
+    '. . .'
+    'footer footer footer';
+    }
+nav {
+    grid-area: nav;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f29;
+    font-family: 'Bebas Neue', cursive;
+    color: #eff3fb;
+    font-size: 25px;
+    }
+header {
+    grid-area: header;
+    background-color:transparent;
+    }
+section{
+    grid-area:section;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: purple;
+    }
+aside{
+    grid-area:aside;
+    background-color: #1A1F3F;
+    font-family: 'Montserrat', sans-serif;
+    }
+#buttons{
+    grid-area:buttons;
+    background-color: #1A1F3F;
+    }
+footer{
+    grid-area:footer;
+    background-color:#2B2B39;
+    font-size: 20px;
+    color:#CDABD9;
+    }
+button {
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    }
+button:hover {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    cursor: crosshair;
+    background-color: #a06e6e;
+    }
+/* ************ end welcomeView's template ************ */
