@@ -1,17 +1,20 @@
 export default  () => {
   const template = `
       <nav>
-          <p>"Nombre de la App"</p>
+          <i id="spa" class="material-icons">spa</i>
+          <span id="appName">soundscape</span>
       </nav>
-      <header></header>
+      <header>
+        <h1>Just put on your headphones</h1>
+        <h2>& close your eyes."</h2>
+      </header>
       <section>
-          <p>NAME OF THE APP goes far beyond simple entertainment, for managing stress and anxiety, insomnia, and stress our recordings are also a fantastic tool for enhancing focus and concentration, stimulating the imagination, fueling creativity, and eliminating distractions.
-              Just put on your headphones and close your eyes. </p>
-          </section>
+        <span>Goes far beyond simple entertainment, for managing stress and anxiety, insomnia and stress.<br> Our recordings are also a fantastic tool for enhancing focus and concentration, stimulating the imagination, fueling creativity, and eliminating distractions.</span>
+      </section>
           <aside>
-              <button id="LogIn"> Log In</button> <br>
-              <button id="SignUpEmail">Sign Up with Email</button>
-              <p>Or sign up with</p>
+              <button id="LogIn"> LogIn</button><br>
+              <button id="SignUpEmail">SignUp with E-mail</button><br>
+              <span>Or Sign Up With:</span><br>
           </aside>
           <div id="buttons">
               <img id="fbLogIn" src="https://bit.ly/3aJAlp4" width="50px" height="50px">
@@ -20,7 +23,7 @@ export default  () => {
               <img id="githubLogIn" src="https://bit.ly/2TWaBzt" width="50px" height="50px">
           </div>
           <footer>
-              <p>Nombre de la app 2020 <img id="mexicoflag" src="https://bit.ly/36q0CFr" width="30px" height="20px"></p>
+              <span id="nameFooter">APP 2020 <img id="mexicoflag" src="https://bit.ly/36q0CFr"></span>
           </footer>
   `;
   const welcomeView = document.createElement('div');

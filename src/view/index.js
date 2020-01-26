@@ -11,8 +11,9 @@ const components = {
 
 const view = {
   init: () => {
-    const home = document.querySelector('homeView');
-    console.log('esta entrando al metodo init del obj view');
+    const home = document.querySelector('.homeView');
+    const back = document.querySelector('#back');
+    back.addEventListener('click', () => { console.log('si funciona'); window.history.back() });
   }
 
 }

@@ -1,14 +1,14 @@
 export default  () => {
   const template = `
     <homeHeader>
-    <i id="back" class='material-icons' style="font-size:2em">keyboard_backspace</i>
+    <i id="back" class='material-icons'>keyboard_backspace</i>
     </homeHeader>
     <homeSection>
     </homeSection>
     <homeNav>
-      <i id="dashboard" class='material-icons' style="font-size:3em;">dashboard</i>
-      <i id="post" class='material-icons' style="font-size:3em">mic</i>
-      <i id="profile" class='material-icons' style="font-size: 3em">account_circle</i>
+      <img id="dashboard" alt="dashboard" src="../assets/home.png"/>
+      <img id="post" alt="post" src="../assets/post.png"/>
+      <img id="profile" alt="profile" src="../assets/profile.png"/>
     </homeNav>
   `;
   const homeView = document.createElement('div');
