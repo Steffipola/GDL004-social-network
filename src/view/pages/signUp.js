@@ -5,18 +5,23 @@ export default  () => {
             <i id="spa" class="material-icons">spa</i>
             <span id="appName">soundscape</span>
           </div>
-          <h1>Sign Up,<br>Breathe<br> Enjoy.</h1>
+          <div class="joinPage">
+            <span id="joinUs">Join us to create</span><br>
+            <span id="audioEx">audio experiences<br></span>
+            <span id="help">to help people<br>sleep&relax.</span>
+          </div>
       </signAside>
       <signSection>
             <i id="name" class="material-icons">face</i>
-            <input id="name" type="text" class="nameInput" placeholder="F i r s t N a m e"/><br>
-            <input id="name" type="text" class="nameInput" placeholder="L a s t N a m e"/><br>
+            <input id="firstName" type="text" class="nameInput" placeholder="F i r s t N a m e"/><br>
+            <input id="lastName" type="text" class="nameInput" placeholder="L a s t N a m e"/><br>
             <i id="email" class="material-icons">mail_outline</i>
             <input id="email" type="email" class="emailInput" placeholder="E-m a i l H e r e"/><br>
             <i id="password" class="material-icons">vpn_key</i>
             <input id="password" type="password" class="passwordInput" placeholder="P a s s w o r d H e r e"/><br>
             <input id="password" type="password" class="passwordInput" placeholder="C o n f i r m P a s s w o r d"/><br>
             <button id="signUp">SignUp with E-mail</button><br>
+            <a href="/#/home">SignUp</a>
             <span>Or Sign Up With:</span><br>
         <div class="buttons">
           <img id="fbLogIn" src="https://bit.ly/3aJAlp4" width="50px" height="50px">

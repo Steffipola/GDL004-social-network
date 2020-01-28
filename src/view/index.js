@@ -13,7 +13,9 @@ const components = {
 
 const view = {
   init: () => {
+    const welcome = document.querySelector('welcomeView');
     const home = document.querySelector('.homeView');
+    const signUp = document.querySelector('signUpView');
     const back = document.querySelector('#back');
     back.addEventListener('click', () => { console.log('si funciona'); window.history.back() });
   }

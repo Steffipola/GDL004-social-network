@@ -23,7 +23,7 @@ export default  () => {
                 </div>
             </div>
                   <button id="LogIn"> LogIn</button><br>
-                  <a href="/#/signUp">No tienes cuenta? Registrate</a>
+                  <a href="/#/signUp">No tienes cuenta?Registrate</a>
           </aside>
           <footer>
               <span id="nameFooter">APP 2020 <img id="mexicoflag" src="https://bit.ly/36q0CFr"></span>
