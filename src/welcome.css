@@ -65,7 +65,7 @@
     }
     section > span {
         font-size: 12px; 
-        color: #a06e6e;
+        color: #a06e6e; 
     }
     aside{
         grid-area:aside;
