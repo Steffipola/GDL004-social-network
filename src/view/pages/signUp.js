@@ -21,7 +21,7 @@ export default  () => {
             <input id="password" type="password" class="passwordInput" placeholder="P a s s w o r d H e r e"/><br>
             <input id="password" type="password" class="passwordInput" placeholder="C o n f i r m P a s s w o r d"/><br>
             <button id="signUp">SignUp with E-mail</button><br>
-            <a href="/#/home">SignUp</a>
+            <a href="#/home">SignUp</a>
             <span>Or Sign Up With:</span><br>
         <div class="buttons">
           <img id="fbLogIn" src="https://bit.ly/3aJAlp4" width="50px" height="50px">

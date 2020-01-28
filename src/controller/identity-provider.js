@@ -3,7 +3,7 @@ import {
 } from "../model/firebase.js";
 
 export const loadProvider = {
-    triggerLogin: () => {
+    triggerSignUpWith: () => {
         document.querySelector('#fbLogIn').addEventListener('click', () => {
             logInWithProvider.Providers(1);
         });

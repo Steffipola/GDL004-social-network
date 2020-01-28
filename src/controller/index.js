@@ -1,4 +1,4 @@
-//import model (firebase, firestore)
+import { model } from '../model/firebase.js';
 import { components, view } from '../view/index.js';
 import { loadProvider } from '../controller/identity-provider.js';
 
@@ -15,9 +15,10 @@ export const controller = {
       case '#':
       case '#/':
           mainView.appendChild(components.welcome());
+          break;
       case '#/signUp':
           mainView.appendChild(components.signUp());
-          loadProvider.triggerLogin();
+          loadProvider.triggerSignUpWith();
           break;
       case '#/home':
           mainView.appendChild(components.home());

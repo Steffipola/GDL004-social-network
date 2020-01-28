@@ -12,24 +12,24 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-const createUser = (email, password) => {
+export const createUserFirebase = (email, password) => {
   firebase.auth().createUserWithEmailAndPassword(email, password)
-    .then(function (user) {
-      console.log('Usuario Creado');
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
+  .then(function(user) {
+    console.log('Usuario Creado');
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 }
 
-const logInUserFirebase = (email, password) => {
+export const logInUserFirebase = (email, password) => {
   firebase.auth().signInWithEmailAndPassword(email, password)
-    .then(function (user) {
-      console.log('Usuario Logeado');
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
+  .then(function(user) {
+    console.log('Usuario Logeado');
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 }
 // LogIn with another social network's account
 const providerFacebook = new firebase.auth.FacebookAuthProvider();
