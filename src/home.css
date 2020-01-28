@@ -19,7 +19,7 @@ body {
 homeHeader {
   grid-area: header;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: rgba(43, 43, 57, 0.3);
   box-shadow: 0px 2px 10px 0px rgba(42, 31, 95, 0.2);

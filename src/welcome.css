@@ -16,7 +16,7 @@
     'nav nav nav nav nav'
     '. . . . .'
     '. header header aside .'
-    '. section . buttons .'
+    '. section . . .'
     '. . . . .'
     'footer footer footer footer footer';
     }
@@ -36,6 +36,7 @@ header{
     }
 header > h1 {
     color: blue;
+    text-shadow: 2px 2px 5px #333333;
     font-size: 3.5em;
     }
 header > h2 {
@@ -71,19 +72,22 @@ aside{
     font-family: font-family: 'Julius Sans One', sans-serif;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
     }
 aside > span {
     color: rgba(205,171,217);
     align-self: center;
     padding-top: 3em;
     }
-#buttons{
-    display: flex;
-    justify-content: space-around;
-    grid-area:buttons;
-    background-color: rgba(26,31,63,0.7);
+.inputs{
+    margin-top: 5em;
+    }
+#email{
+    color:#CDABD9;
+    }
+#password{
+    color:#CDABD9;
     }
 footer{
     grid-area:footer;
@@ -105,20 +109,19 @@ footer{
     height: 10px;
     padding-right: .5em;
     }
-button {
+#logIn{
     font-size: 20px;
     border: none;
     border-radius: 10px;
-    background-color: #EFF3FB;
-    height: 50px;
-    }
-button:hover {
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    background-color:#a06e6e;
-    color: #EFF3FB;
-    cursor: crosshair;
     background-color: #a06e6e;
+    height: 50px;
+    width: 100px;
+    align-self: center;
+    margin-top: 2em;
+    }
+#signUpLink{
+    font-size: 1em;
+    margin-bottom: 3em;
     }
 }
 /* ************ end welcomeView's template ************ */

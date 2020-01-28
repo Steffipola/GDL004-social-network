@@ -5,23 +5,26 @@ export default  () => {
           <span id="appName">soundscape</span>
       </nav>
       <header>
-        <h1>Just put on your headphones</h1>
+        <h1>"Just put on your headphones</h1>
         <h2>& close your eyes."</h2>
       </header>
       <section>
         <span>Goes far beyond simple entertainment, for managing stress and anxiety, insomnia and stress.<br> Our recordings are also a fantastic tool for enhancing focus and concentration, stimulating the imagination, fueling creativity, and eliminating distractions.</span>
       </section>
           <aside>
-              <button id="LogIn"> LogIn</button><br>
-              <button id="SignUpEmail">SignUp with E-mail</button><br>
-              <span>Or Sign Up With:</span><br>
+            <div class="inputs">
+                <div class="email">
+                  <i id="email" class="material-icons">mail_outline</i>
+                  <input id="email" type="email" class="emailInput" placeholder=":Y o u r E-m a i l h e r e"/><br>
+                </div>
+                <div class="password">
+                  <i id="password" class="material-icons">vpn_key</i>
+                  <input id="password" type="password" class="passwordInput" placeholder=": password"/><br>
+                </div>
+            </div>
+                  <button id="LogIn"> LogIn</button><br>
+                  <a href="/#/signUp">No tienes cuenta? Registrate</a>
           </aside>
-          <div id="buttons">
-              <img id="fbLogIn" src="https://bit.ly/3aJAlp4" width="50px" height="50px">
-              <img id="twitterLogIn" src="https://bit.ly/38Di5f8" width="50px" height="50px">
-              <img id="googleLogIn" src="https://bit.ly/2Gj87TX" width="50px" height="50px">
-              <img id="githubLogIn" src="https://bit.ly/2TWaBzt" width="50px" height="50px">
-          </div>
           <footer>
               <span id="nameFooter">APP 2020 <img id="mexicoflag" src="https://bit.ly/36q0CFr"></span>
           </footer>

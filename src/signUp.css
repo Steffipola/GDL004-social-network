@@ -1,0 +1,62 @@
+.signUpView{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 7% 1fr 8%;
+    grid-template-areas:
+    'asd . '
+    'asd section'
+    'footer footer';
+    background-color: white;
+    }
+signAside{
+    grid-area: asd;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #CDABD9;
+    }
+signAside > #name {
+    grid-area: name;
+    color: white;
+    }
+signAside > h1 {
+    font-size: 4.5em;
+    padding-top: 1em;
+    align-self: center;
+    color: blue;
+    }
+signSection{
+    grid-area: section;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    }
+signSection > #name{
+    color: #CDABD9;
+    }
+#signUp{
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #a06e6e;
+    height: 50px;
+    width: 150px;
+    align-self: center;
+    cursor: pointer;
+    color: white;
+    }
+.buttons > img {
+    cursor: pointer;
+    }
+signFooter{
+    grid-area: footer;
+    background-color: #CDABD9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+    }
+#nameFooter{
+    color: white;
+    }

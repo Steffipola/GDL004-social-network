@@ -1,10 +1,12 @@
 import welcomeView from './pages/welcome.js';
+import signUpView from './pages/signUp.js';
 import homeView from './pages/home.js';
 import { controller } from '../controller/index.js';
 
 const components = {
   welcome: welcomeView,
   home: homeView,
+  signUp: signUpView
   //profile: profileView
   //404
 }

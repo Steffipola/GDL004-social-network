@@ -8,13 +8,15 @@ export const controller = {
 
   changeTemplates: (hash) => {
     const mainView = document.querySelector('#container');
-    mainView.innerHTML = '';
 
     switch (hash) {
       case '':
       case '#':
       case '#/':
           return mainView.appendChild(components.welcome());
+      case '#/signUp':
+          mainView.appendChild(components.signUp());
+          break;
       case '#/home':
           mainView.appendChild(components.home());
           controller.init();
