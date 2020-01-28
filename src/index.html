@@ -1,33 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Social Network</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Montserrat+Subrayada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="https://bit.ly/2RYTV7R"/>
+  <title>Soundscape</title>
 </head>
 <body>
-  <center>
-  <h1> ASMR App </h1>
-  Email:<br>
-  <input id="email" type="email" class="email"/><br>
-  Password:<br>
-  <input id="password" type="password" class="password"/><br>
-  <button class="register">Register</button>
-  <button class="login">LogIn</button><br>
-  <p>or</p>
-  <button class="facebook">LogIn With Facebook</button>
-  <button class="twitter">LogIn With Twitter</button>
-</center>
+  <div id='container'></div>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="./model/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase.js"></script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-  https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
-
-  <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
-  <script type="module" src="index.js"></script>
 </body>
 </html>
