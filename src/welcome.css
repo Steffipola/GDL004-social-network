@@ -80,6 +80,7 @@ aside > span {
     align-self: center;
     padding-top: 3em;
     }
+
 .inputs{
     margin-top: 5em;
     }
@@ -109,19 +110,28 @@ footer{
     height: 10px;
     padding-right: .5em;
     }
-#logIn{
+#LogIn{
     font-size: 20px;
     border: none;
     border-radius: 10px;
-    background-color: #a06e6e;
+    background-color:#a06e6e;
     height: 50px;
     width: 100px;
     align-self: center;
     margin-top: 2em;
     }
-#signUpLink{
+#LogIn:hover {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color:#EFF3FB;
+    color: black;
+    cursor: crosshair;
+    background-color:#EFF3FB;
+    }
+#Signup{
     font-size: 1em;
     margin-bottom: 3em;
+    color: lavenderblush;
     }
 }
 /* ************ end welcomeView's template ************ */

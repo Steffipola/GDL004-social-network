@@ -20,11 +20,27 @@ signAside > #name {
     grid-area: name;
     color: white;
     }
-signAside > h1 {
-    font-size: 4.5em;
-    padding-top: 1em;
-    align-self: center;
+.joinPage{
+    padding-top: 4em;
+    padding-left: 1em;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    }
+.joinPage > #joinUs{
     color: blue;
+    font-size: 4.3em;
+    align-self: center;
+    }
+.joinPage > #audioEx{
+    color: blue;
+    font-size: 4em;
+    align-self: center;
+    }
+.joinPage > #help{
+    color: blue;
+    font-size: 4em;
+    align-self: center;
     }
 signSection{
     grid-area: section;
