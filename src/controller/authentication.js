@@ -5,9 +5,11 @@ import {
 
 export const authenticationFirebase = {
   triggerLogInFirebase: () => {
-      document.querySelector('.logIn').addEventListener('click', () => {
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
+      document.querySelector('#LogIn').addEventListener('click', () => {
+      const email = document.getElementById('emailInput').value;
+      console.log(email);
+      const password = document.getElementById('passwordInput').value;
+      console.log(password);
       logInUserFirebase(email, password);
       });
   },

@@ -1,6 +1,6 @@
-import { model } from '../model/firebase.js';
 import { components, view } from '../view/index.js';
 import { loadProvider } from '../controller/identity-provider.js';
+import { authenticationFirebase } from '../controller/authentication.js';
 
 export const controller = {
   init: () => {
@@ -15,6 +15,8 @@ export const controller = {
       case '#':
       case '#/':
           mainView.appendChild(components.welcome());
+          console.log('entra');
+          authenticationFirebase.triggerLogInFirebase();
           break;
       case '#/signUp':
           mainView.appendChild(components.signUp());

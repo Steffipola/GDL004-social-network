@@ -12,13 +12,13 @@ export default  () => {
         <span>Goes far beyond simple entertainment, for managing stress and anxiety, insomnia and stress.<br> Our recordings are also a fantastic tool for enhancing focus and concentration, stimulating the imagination, fueling creativity, and eliminating distractions.</span>
       </section>
           <aside>
-              <form id="logIn-form">
+              <div id="logIn-form">
                   <i id="email" class="material-icons">mail_outline</i>
-                  <input name="userEmail" type="email" placeholder="E m a i l  h e r e."></input> <br>
+                  <input id="emailInput" type="email" placeholder="E m a i l  h e r e."></input> <br>
                   <i id="password" class="material-icons">vpn_key</i>
-                  <input name="userPassword" type="password" placeholder="P a s s w o r d  h e r e."></input> <br>
-                  <button type="submit" id="LogIn">LogIn</button><br>
-              </form>
+                  <input id="passwordInput" type="password" placeholder="P a s s w o r d  h e r e."></input> <br>
+                  <button id="LogIn">LogIn</button><br>
+              </div>
               <a href="#/signUp" id="Signup">Don't have an accout? Sign Up now!</a>
           </aside>
           <footer>

@@ -12,20 +12,21 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-export const createUserFirebase = (email, password) => {
-  firebase.auth().createUserWithEmailAndPassword(email, password)
+export const logInUserFirebase = (email, password) => {
+  console.log('entra');
+  firebase.auth().signInWithEmailAndPassword(email, password)
   .then(function(user) {
-    console.log('Usuario Creado');
+    console.log('Usuario Logeado');
   })
   .catch(function(error) {
     console.error(error);
   });
 }
 
-export const logInUserFirebase = (email, password) => {
-  firebase.auth().signInWithEmailAndPassword(email, password)
+export const createUserFirebase = (email, password) => {
+  firebase.auth().createUserWithEmailAndPassword(email, password)
   .then(function(user) {
-    console.log('Usuario Logeado');
+    console.log('Usuario Creado');
   })
   .catch(function(error) {
     console.error(error);
