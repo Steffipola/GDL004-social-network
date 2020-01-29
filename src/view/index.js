@@ -12,17 +12,21 @@ const components = {
 }
 
 const view = {
-  initLogIn: () => {
-    const logInForm = document.getElementById('logIn-form');
-    logInForm.addEventListener('submit', (e) => {
+    initLogIn: () => {
+      const logInForm = document.getElementById('logIn-form');
+      logInForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const userData = {
         email: logInForm.userEmail.value,
         password: logInForm.userPassword.value
-      }
-  });
+        }
+      });
+    },
 
- }
+   initSignUp: () => {
+    const signUpForm = document.getElementById('signUp-form');
+    console.log(signUpForm); 
+   }
  /* const back = document.querySelector('#back');
  back.addEventListener('click', () => { console.log('si funciona'); window.history.back() }); */
 }

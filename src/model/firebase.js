@@ -13,10 +13,9 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export const logInUserFirebase = (email, password) => {
-  console.log('entra');
   firebase.auth().signInWithEmailAndPassword(email, password)
   .then(function(user) {
-    console.log('Usuario Logeado');
+    console.log('User already logged in');
   })
   .catch(function(error) {
     console.error(error);
@@ -26,7 +25,7 @@ export const logInUserFirebase = (email, password) => {
 export const createUserFirebase = (email, password) => {
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then(function(user) {
-    console.log('Usuario Creado');
+    console.log('User already created');
   })
   .catch(function(error) {
     console.error(error);

@@ -15,11 +15,11 @@ export const controller = {
       case '#':
       case '#/':
           mainView.appendChild(components.welcome());
-          console.log('entra');
           authenticationFirebase.triggerLogInFirebase();
           break;
       case '#/signUp':
           mainView.appendChild(components.signUp());
+          authenticationFirebase.triggerSignUpFirebase();
           loadProvider.triggerSignUpWith();
           break;
       case '#/home':
